@@ -2,7 +2,7 @@ import "./styles.css";
 import ImageSlider from "./components/imageslider";
 import MenuScroll from "./components/menuscroll";
 import AppHeader from "./components/appheader";
-import FixedButtons from "./components/footer";
+import FixedButtons from "./components/bottomnavigation";
 
 export default function App() {
   return (
