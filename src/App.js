@@ -1,6 +1,6 @@
 import "./styles.css";
 import AppHeader from "./components/appheader";
-import FixedButtons from "./components/bottomnavigation";
+import BottomNavigation from "./components/bottomnavigation";
 import Main from "./components/routes";
 
 export default function App() {
@@ -8,7 +8,7 @@ export default function App() {
     <div className="App">
       <AppHeader />
       <Main />
-      <FixedButtons />
+      <BottomNavigation />
     </div>
   );
 }
