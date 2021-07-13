@@ -29,12 +29,7 @@ export default function Menuscroll() {
       <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4">
         <FoodCard imgsrc={burger} title="Burgers" width="50px" height="auto" />
         <FoodCard imgsrc={momo} title="Momos" width="50px" height="auto" />
-        <FoodCard
-          imgsrc={drumsticks}
-          title="Drumstick"
-          width="50px"
-          height="auto"
-        />
+        <FoodCard imgsrc={drumsticks} title="Drumstick" width="50px" height="auto" />
         <FoodCard imgsrc={wings} title="Wings" width="50px" height="auto" />
       </div>
     </div>
