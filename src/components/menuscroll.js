@@ -1,9 +1,7 @@
 import "./css/menuscroll.css";
 import Card from "react-bootstrap/Card";
-import burger from "../asset/images/burger.jpg";
-import momo from "../asset/images/momo.jpg";
-import drumsticks from "../asset/images/drumsticks.jpg";
-import wings from "../asset/images/wings.jpg";
+import item from "../asset/data.js";
+import { Link } from "react-router-dom";
 
 const FoodCard = (props) => (
   <div class="col-md-2 col-sm-3 col-xs-5">
@@ -27,10 +25,17 @@ export default function Menuscroll() {
         Our improvised <span>Menus</span>
       </h3>
       <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4">
-        <FoodCard imgsrc={burger} title="Burgers" width="50px" height="auto" />
-        <FoodCard imgsrc={momo} title="Momos" width="50px" height="auto" />
-        <FoodCard imgsrc={drumsticks} title="Drumstick" width="50px" height="auto" />
-        <FoodCard imgsrc={wings} title="Wings" width="50px" height="auto" />
+        {item.map((singleItem) => (
+          <Link to={`/item/${singleItem.name}`}>
+            <FoodCard
+              key={singleItem.id}
+              imgsrc={require(singleItem.thumbnail)}
+              title={singleItem.name}
+              width="50px"
+              height="auto"
+            />
+          </Link>
+        ))}
       </div>
     </div>
   );

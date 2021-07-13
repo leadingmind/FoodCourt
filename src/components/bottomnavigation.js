@@ -5,15 +5,18 @@ import HomeIcon from "@material-ui/icons/Home";
 import LocalOfferIcon from "@material-ui/icons/LocalOffer";
 import TocIcon from "@material-ui/icons/Toc";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import { Link } from "react-router-dom";
 
 const BottomNavigation = () => (
   <Container className="fixed-bottom menu" fluid="xs">
     <Row>
       <Col className="pr-0 col-3 menu-col ">
-        <Container>
-          <HomeIcon />
-          <Col className="mx-0 px-0">Home</Col>
-        </Container>
+        <Link to="/">
+          <Container>
+            <HomeIcon />
+            <Col className="mx-0 px-0">Home</Col>
+          </Container>
+        </Link>
       </Col>
       <Col className="px-0 col-3 menu-col">
         <Container>
