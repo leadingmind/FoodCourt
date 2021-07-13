@@ -1,15 +1,13 @@
 import "./styles.css";
 import AppHeader from "./components/appheader";
 import FixedButtons from "./components/bottomnavigation";
-import Burger from './pages/burger';
+import Main from "./components/routes";
 
 export default function App() {
   return (
     <div className="App">
       <AppHeader />
-      {/* <ImageSlider />
-      <MenuScroll /> */}
-      <Burger />
+      <Main />
       <FixedButtons />
     </div>
   );
