@@ -36,7 +36,7 @@ export default function SingleItem() {
                     <Card.Text>
                       Amazing mix of Cabbage, red onion and soyabin
                     </Card.Text>
-                    <Card.Link href="#">Order Now</Card.Link>
+                    <Card.Link href="#">Add to Cart</Card.Link>
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
@@ -56,7 +56,7 @@ export default function SingleItem() {
                       Minced chicken mixed with cabbage and onion stuffed inside
                       dough
                     </Card.Text>
-                    <Card.Link href="#">Order Now</Card.Link>
+                    <Card.Link href="#">Add to Cart</Card.Link>
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
