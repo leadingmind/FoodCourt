@@ -1,4 +1,4 @@
-import './App.css';
+import "./App.css";
 import AppHeader from "./components/appheader";
 import BottomNavigation from "./components/bottomnavigation";
 import Main from "./components/routes";
